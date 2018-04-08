@@ -1,0 +1,12 @@
+---
+Test
+---
+!define TEST_SYSTEM {Slim}
+!path /home/rmoita/dev/eclipse-workspace/fitnesse-sample/target/classes
+
+!|com.ph.fitnessesample.AppFixture                       |
+|text|toUpperCase?                                       |
+|aa  |AA                                                 |
+|a2b |A2B                                                |
+|bb  |BB                                                 |
+|111 |java.lang.IllegalArgumentException<<Invalid input>>|
